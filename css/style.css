@@ -6,16 +6,84 @@ body {
     padding: 0;
 }
 
-.central{
+#bounds{
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items:  flex-end;    
 }
 
-#hidden {
-    display: none;
+.central {
+    background-color: #232b33;
+    color: #98c2ed;
+    height: 100%;
+    width: 100%;
+}
+
+value {
+    font-size: 200px;
+}
+
+input {
+    background: transparent;
+    border: 0px;
+    color: #98c2ed;
+    margin-bottom: 20px #3F5872;
+}
+
+.box{
+    background-color: #232b33;
+}
+
+.parenthesis {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    font-size: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.parenthesis:hover {
+    color: whitesmoke;
+}
+
+h1 {
+    font-size: 200px;
+}
+
+.slabel{
+    font-family: 'Lekton';
+}
+
+#ynDec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+#ynDec:hover {
+    color: whitesmoke;
+}
+
+#comma {
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+.getResult{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
 }
 
 #resultant {
     display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
 }

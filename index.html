@@ -9,38 +9,29 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <script src="js/index.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Lekton' rel='stylesheet'>
     </head>
 
     <body>
         <div class="central">
-            <form>
+            <div id="bounds">
+                <div id="leftparenthesis" class="parenthesis">(</div>
                 <div id="minBoundary">
-                    <label for="minNum">Minimum Value</label>
-                    <input type="number" id="minNum" required/> <br/>
-                    <label for="exclusiveMin">Exclude this value from result</label>
-                    <input type="checkbox" id="exclusiveMin"/>
+                    <input type="number" id="minNum" class="box"/>
                 </div>
+                <div id="comma">,</div>
                 <div id="maxBoundary">
-                    <label for="maxNum">Maximum Value</label>
-                    <input type="number" id="maxNum" required/> <br/>
-                    <label for="exclusiveMax">Exclude this value from result</label>
-                    <input type="checkbox" id="exclusiveMax"/>
+                    <input type="number" id="maxNum" class="box"/>
                 </div>
-                <div id="ynDec">
-                    <input type="checkbox" id="yes"/>
-                    <label for="yes">Include Decimals</label>
-                    <!-- <div id="hidden">
-                        <label for="numOfDec">How many decimal places?</label>
-                        <input type="number" id="numOfDec"/>
-                    </div> -->
-                </div>
-                <div class="getResult">
-                    <input type="button" value="Get" id="submission">
-                </div>
-                <div class="generatednum">
-                    <p id="resultant"></p>
-                </div>
-            </form>
+                <div id="rightparenthesis" class="parenthesis">)</div>
+            </div>
+            <div id="ynDec">→.00</div>
+            <div class="getResult">
+                <input type="button" value="Get" id="submission">
+            </div>
+            <div class="generatednum">
+                <p id="resultant"></p>
+            </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     </body>

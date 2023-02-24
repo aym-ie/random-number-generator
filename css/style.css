@@ -19,15 +19,17 @@ body {
     width: 100%;
 }
 
-value {
-    font-size: 200px;
-}
-
 input {
     background: transparent;
-    border: 0px;
+    border: hidden;
     color: #98c2ed;
-    margin-bottom: 20px #3F5872;
+    text-align: center;
+    outline: none;
+    size: 24px;
+}
+
+#bounds {
+    text-align: center;
 }
 
 .box{
@@ -61,6 +63,8 @@ h1 {
     align-items: center;
     width: 100px;
     height: 100px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #ynDec:hover {
@@ -85,5 +89,6 @@ h1 {
     display: none;
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center;  
+    margin-top: 22px; 
 }

@@ -52,24 +52,24 @@ window.addEventListener('load',() => {
             maxbound = Math.floor(maxbound);
             
             output.innerText = Math.random() * (maxbound - minbound) + minbound;
-            output.style.display = 'block';
+            output.style.display = 'flex';
         } 
         else {
             if (minExclude === "[" && maxExclude === "]") { // inclusive inclusive
                 output.innerText = Math.floor(Math.random() * (maxbound - minbound + 1) + minbound);
-                output.style.display = 'block';
+                output.style.display = 'flex';
             }
             else if (minExclude === "(" && maxExclude === "]") { // exclusive inclusive
                 output.innerText = Math.floor(Math.random() * (maxbound - minbound) + (minbound + 1));
-                output.style.display = 'block';
+                output.style.display = 'flex';
             }
             else if (minExclude === "[" && maxExclude === ")") { // inclusive exclusive
                 output.innerText = Math.floor(Math.random() * (maxbound - minbound) + minbound);
-                output.style.display = 'block';
+                output.style.display = 'flex';
             }
             else /* minExclude === "(" && maxExclude === ")"  */ { // exclusive exclusive
                 output.innerText = Math.floor(Math.random() * (maxbound - minbound - 1) + (minbound + 1));
-                output.style.display = 'block';
+                output.style.display = 'flex';
             }
         }
     });

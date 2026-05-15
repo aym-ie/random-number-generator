@@ -5,22 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Random Number Generator</title>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" href="rng-logo.svg">
+        <link rel="icon" href="rng-pixel.svg">
         <script src="js/index.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <link href='https://fonts.googleapis.com/css?family=Lekton' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     </head>
 
     <body>
+        <div class="error-slot" aria-live="assertive">
+            <p id="error" role="alert" hidden></p>
+        </div>
+        <div class="app">
         <div class="central container-fluid">
             <div id="bounds">
                 <div id="leftparenthesis" class="parenthesis">(</div>
                 <div id="minBoundary">
-                    <input type="number" id="minNum" class="box"/>
+                    <input type="number" id="minNum" class="box" inputmode="numeric" aria-label="Minimum"/>
                 </div>
                 <div id="comma">,</div>
                 <div id="maxBoundary">
-                    <input type="number" id="maxNum" class="box"/>
+                    <input type="number" id="maxNum" class="box" inputmode="numeric" aria-label="Maximum"/>
                 </div>
                 <div id="rightparenthesis" class="parenthesis">)</div>
             </div>
@@ -28,9 +32,10 @@
             <div class="getResult">
                 <input type="button" value="Get" id="submission">
             </div>
-            <div class="generatednum">
-                <p id="resultant"></p>
-            </div>
+        </div>
+        <div class="result-slot">
+            <p id="resultant" role="status" aria-live="polite" hidden></p>
+        </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     </body>

@@ -62,10 +62,10 @@ window.addEventListener('load', () => {
         var decYes = document.getElementById('ynDec').innerText;
 
         if (minbound.toString() == 'NaN' || maxbound.toString() == 'NaN') {
-            showError('Fill in a minimum and a maximum boundary!');
+            showError('Must have both minimum and maximum!');
         }
         else if (minbound > maxbound) {
-            showError('Make sure the minimum boundary is less than or equal to the maximum boundary!');
+            showError('The minimum must be greater than or equal to the maximum!');
         }
         else if (decYes === "←.00") {
             minbound = Math.ceil(minbound);

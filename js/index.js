@@ -44,10 +44,10 @@ window.addEventListener('load', () => {
 
     var decYes = document.getElementById('ynDec');
     decYes.addEventListener('click', () => {
-        if (decYes.innerText === "→.00") {
-            decYes.innerText = "←.00";
+        if (decYes.innerText === "→.000") {
+            decYes.innerText = "←.000";
         } else {
-            decYes.innerText = "→.00";
+            decYes.innerText = "→.000";
         }
     });
 
@@ -67,11 +67,11 @@ window.addEventListener('load', () => {
         else if (minbound > maxbound) {
             showError('The minimum must be greater than or equal to the maximum!');
         }
-        else if (decYes === "←.00") {
+        else if (decYes === "←.000") {
             minbound = Math.ceil(minbound);
             maxbound = Math.floor(maxbound);
 
-            showResult(String(Math.random() * (maxbound - minbound) + minbound));
+            showResult(String((Math.random() * (maxbound - minbound) + minbound).toFixed(3)));
         }
         else {
             if (minExclude === "[" && maxExclude === "]") { // inclusive inclusive

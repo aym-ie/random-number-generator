@@ -97,7 +97,7 @@ body::after {
 }
 
 .result-slot {
-    min-height: 3.5rem;
+    min-height: 5.5rem;
 }
 
 .error-slot {
@@ -120,9 +120,9 @@ input {
 }
 
 #bounds .box {
-    width: 3.5ch;
-    min-width: 3.5ch;
-    max-width: 12ch;
+    width: 5ch;
+    min-width: 5ch;
+    max-width: 15ch;
     padding: 0;
     margin: 0;
     background: transparent;
@@ -200,7 +200,7 @@ h1 {
     margin: 1rem auto 0;
     padding: 0.5rem;
     text-align: center;
-    font-size: 0.5rem;
+    font-size: 1rem;
     cursor: pointer;
     user-select: none;
     border: 3px solid var(--border);
@@ -284,7 +284,7 @@ h1 {
     background: rgba(15, 16, 32, 0.6);
     box-shadow: 3px 3px 0 0 #0f1020;
     font-family: var(--font);
-    font-size: 0.75rem;
+    font-size: 1rem;
     line-height: 1.8;
 }
 
@@ -296,6 +296,6 @@ h1 {
     background: rgba(15, 16, 32, 0.6);
     box-shadow: 3px 3px 0 0 #0f1020;
     font-family: var(--font);
-    font-size: 0.45rem;
+    font-size: 0.75rem;
     line-height: 1.9;
 }
